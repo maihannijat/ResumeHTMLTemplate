@@ -1,0 +1,327 @@
+<!--
+    Author: Maihan Nijat
+    Date: 2017-11-10
+    Document: HTML Structure
+    Purpose: Portflio
+    Description: Single page web portfolio website with HTML5, CSS and JavaScript
+                 technologies.
+    Version: 1.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Maihan Nijat Portfolio</title>
+      <meta name="keywords" content="maihan nijat portfolio, nijat portfolio, maihan portfolio, portfolio, maihan nijat, maihan, nijat, canada" />
+      <meta name="description" content="Maihan Nijat is a Mobile and Web Application developer in Windsor city, Ontario, Canada." />
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+      <link href="css/style.css" type="text/css" rel="stylesheet" />
+      <script src="scripts/jquery-3-2-1-min.js" type="text/javascript"></script>
+      <script src="scripts/script.js" type="text/javascript"></script>
+   </head>
+   <body>
+      <header>
+         <img src="images/menu.png" alt="Menu icon" class="menu-icon"/>
+         <h1 class="name">Maihan Nijat</h1>
+         <nav class="top-menu">
+            <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#education">Education</a></li>
+               <li><a href="#work">Work</a></li>
+               <li><a href="#experience">Experience</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
+      <aside class="sidebar">
+         <div class="fixed-sidebar">
+            <img src="images/logo.jpg" alt="Maihan Nijat" class="logo"/>
+            <h1 class="name">Maihan Nijat</h1>
+            <nav class="menu">
+               <ul>
+                  <li><a href="#home"><img src="images/home-outline.png" alt="Home Icon"/>Home</a></li>
+                  <li><a href="#about"><img src="images/account-outline.png" alt="About Icon"/>About</a></li>
+                  <li><a href="#education"><img src="images/book-open-page-variant.png" alt="education Icon"/>Education</a></li>
+                  <li><a href="#work"><img src="images/wallet-outline.png" alt="Work Icon"/>Work</a></li>
+                  <li><a href="#experience"><img src="images/lightbulb-outline.png" alt="Experience Icon"/>Experience</a></li>
+                  <li><a href="#skills"><img src="images/chart-line.png" alt="Skills Icon"/>Skills</a></li>
+                  <li><a href="#contact"><img src="images/phone.png" alt="Contact Icon"/>Contact</a></li>
+               </ul>
+            </nav>
+         </div>
+      </aside>
+      <article>
+         <section id="home" class="parallax">
+            <div class="content_row black_overlay">
+               <div class="content_col">
+                  <h2 class="text_white">Creative Thinking</h2>
+                  <p class="text_white">Mobile & Web Application Developer</p>
+                  <a href="#about" class="btn btn-warning">Learn More</a>
+               </div>
+               <span><img src="images/banner1.jpg" alt="Maihan Nijat" class="card"/></span>
+            </div>
+         </section>
+         <section id="about" class="parallax">
+            <div class="content_row white_overlay">
+               <div>
+                  <h2 class="text_gray">About</h2>
+                  <h3 class="text_gray">Inspired by Difference</h3>
+                  <p class="text_gray">An ambitious problem solver with a passion for programming, and has a keen interest in technology, mobile applications, and web applications. I have experience of creating logical and innovative solutions to complex problems.  I have designed and developed more than 30 websites using Content Management System (CMS) for different companies. Also, developed/ produced around 17 applications for both Android and iOS devices.</p>
+                  <a href="#education" class="btn btn-warning">Work</a>
+               </div>
+               <span class="content_col"><img src="images/banner2.jpg" alt="Maihan Nijat" class="card"/></span>
+            </div>
+         </section>
+         <section id="education" class="parallax">
+            <div class="content_block black_overlay">
+               <div class="content_col">
+                  <h2 class="text_white">Education</h2>
+                  <p class="text_white">The educational background section is summaried to focus on web development and web design related.​​​​​​​</p>
+               </div>
+               <div class="education_cards">
+                 <div class="education_card">
+                    <h3>Mobile Application Dev. (ongoing)</h3>
+                    <p>Last year of the three years program (MAD). Courses covered so far: HTML5, CSS, JavaScript, PHP, Java, iOS and Android.</p>
+                 </div>
+                 <div class="education_card">
+                    <h3>Business Administration Degree</h3>
+                    <p>Four years (2010-2014) bachelor degree program in the Business Administration (specialization in management) successfully completed.</p>
+                 </div>
+                 <div class="education_card">
+                    <h3>Diploma in Information Technology</h3>
+                    <p>One year diploma program in Information Technology completed in 2005 which focused on Operating Systems, Microsoft Office and Hardware.</p>
+                 </div>
+                 <div class="education_card">
+                    <h3>Microsoft Certified System Eng.</h3>
+                    <p>Four months, A short term course on Microsoft Certified System Engineering to cover Microsoft Servers and Networking (Hardware & Software).</p>
+                 </div>
+                 <div class="education_card">
+                    <h3>Data Management Short Course</h3>
+                    <p>Four months, A short term course on Data Management: Data Collection, Data Cleaning, Data Verification, Data Manipulation and Data Analysis.</p>
+                 </div>
+                 <div class="education_card">
+                    <h3>Database Design and Development</h3>
+                    <p>Eight months diploma program completed in 2008 which focused on Microsoft Access, Microsoft SQL Server and Oracle Administration</p>
+                 </div>
+               </div>
+               <br>
+               <a href="#work" class="btn btn-warning">Contacts</a>
+            </div>
+         </section>
+         <section id="work" class="parallax">
+            <div class="content_block white_overlay">
+               <h2 class="text_gray">Work</h2>
+               <h3 class="text_gray">Recent Projects</h3>
+               <div class="content_row content_wrap">
+                 <div class="work_card card">
+                    <a href="https://itunes.apple.com/us/app/pashto-proverbs/id1329853719?mt=8" target="_blank">
+                       <figure>
+                          <img src="images/proverbs.png" alt="Pashto Proverbs iOS" />
+                          <figcaption>
+                             <h4 class="text_gray">Pashto Proverbs - iOS</h4>
+                          </figcaption>
+                       </figure>
+                    </a>
+                 </div>
+                 <div class="work_card card">
+                    <a href="https://play.google.com/store/apps/details?id=com.sunzala.afghankeyboard" target="_blank">
+                       <figure>
+                          <img src="images/keyboard.png" alt="Afghan Keyboard" />
+                          <figcaption>
+                             <h4 class="text_gray">Afghan Keyboard - Android</h4>
+                          </figcaption>
+                       </figure>
+                    </a>
+                 </div>
+                 <div class="work_card card">
+                    <a href="https://play.google.com/store/apps/details?id=com.sunzala.pashtolearning" target="_blank">
+                       <figure>
+                          <img src="images/pashtolearning.png" alt="Pashto Learning" />
+                          <figcaption>
+                             <h4 class="text_gray">Pashto Learning - Android</h4>
+                          </figcaption>
+                       </figure>
+                    </a>
+                 </div>
+                  <div class="work_card card">
+                     <a href="http://www.behnamgroup.com/" target="_blank">
+                        <figure>
+                           <img src="images/behnam.jpg" alt="Behnam Group of Companies" />
+                           <figcaption>
+                              <h4 class="text_gray">Behnam Group Company</h4>
+                           </figcaption>
+                        </figure>
+                     </a>
+                  </div>
+                  <div class="work_card card">
+                     <a href="http://www.redcrescentgroup.org" target="_blank">
+                        <figure>
+                           <img src="images/rcg.jpg" alt="Red Crescent Group" />
+                           <figcaption>
+                              <h4 class="text_gray">Red Crescent Group</h4>
+                           </figcaption>
+                        </figure>
+                     </a>
+                  </div>
+                  <div class="work_card card">
+                     <a href="http://www.mobileglasgow.co.uk/" target="_blank">
+                        <figure>
+                           <img src="images/glasgow.jpg" alt="Glasgow Mobile Shop" />
+                           <figcaption>
+                              <h4 class="text_gray">Glasgow Mobile Shop</h4>
+                           </figcaption>
+                        </figure>
+                     </a>
+                  </div>
+                  <!-- <div class="work_card card">
+                     <a href="http://www.zacollection.com/" target="_blank">
+                        <figure>
+                           <img src="images/za.jpg" alt="Zeba Afghan Collections" />
+                           <figcaption>
+                              <h4 class="text_gray">Zeba Afghan Collections</h4>
+                           </figcaption>
+                        </figure>
+                     </a>
+                  </div> -->
+               </div>
+               <a href="#experience" class="btn btn-warning">Experience</a>
+            </div>
+         </section>
+         <section id="experience" class="parallax">
+            <div class="black_overlay">
+               <h2 class="text_white">Working Skills</h2>
+               <div class="content_row">
+                  <div class="content_col">
+                     <div class="exp_item">
+                        <h4 class="text_white">Creative Skills</h4>
+                        <p class="text_white">I have creative skills which help to create new ideas and an approach toward having it in practical.</p>
+                     </div>
+                     <div class="exp_item">
+                        <h4 class="text_white">Time Management</h4>
+                        <p class="text_white">I have the ability to manage my time to make sure my tasks are achieved on time, and work more efficiently.</p>
+                     </div>
+                     <div class="exp_item">
+                        <h4 class="text_white">Analytical Skills</h4>
+                        <p class="text_white">I have analytical skills to reason for improvements and discuss logically.</p>
+                     </div>
+                     <div class="exp_item">
+                        <h4 class="text_white">Problem Solving</h4>
+                        <p class="text_white">My both analytical and creative skills help to solve problems effectively and efficiently.</p>
+                     </div>
+                     <a href="#skills" class="btn btn-warning">Skills</a>
+                  </div>
+                  <span><img src="images/working_skills.png" alt="Maihan Working Skills"/></span>
+               </div>
+            </div>
+         </section>
+         <section id="skills" class="parallax">
+            <div class="content_block white_overlay">
+               <div class="content_col">
+                  <h2 class="text_gray">Skills</h2>
+                  <p class="text_gray">I have various of skills which are helpful in Mobile Application Development and Web Application Development.</p>
+                  <p class="text_gray">The following is a quick overview of my skills:​​​​​​​
+                  <p>
+               </div>
+               <div class="content_row content_wrap">
+                  <div>
+                     <span class="progress_title">Android</span>
+                     <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="progress_title">Java</span>
+                     <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="progress_title">iOS</span>
+                     <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="progress_title">PHP</span>
+                     <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="progress_title">JavaScript</span>
+                     <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="progress_title">CSS</span>
+                     <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="progress_title">HTML</span>
+                     <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="progress_title">SEO</span>
+                     <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+               </div>
+               <a href="#contact" class="btn btn-warning">Contact</a>
+            </div>
+         </section>
+         <section id="contact" class="parallax">
+            <div class="black_overlay">
+               <h2 class="text_white">Contact</h2>
+               <div class="content_row">
+                  <div class="content_col">
+                     <a href="https://github.com/maihannijat/Resume/raw/master/MaihanNijat_Resume.pdf">
+                        <img src="images/resume.png" alt="Maihan Nijat Resume" />
+                        <p class="text_white">Click here to download my resume</p>
+                     </a>
+                     <a href="https://github.com/maihannijat">
+                        <img src="images/github.png" alt="GitHub" />
+                        <p class="text_white">GitHub: https://github.com/maihannijat</p>
+                     </a>
+                  </div>
+                  <div class="content_col">
+                     <a href="https://www.linkedin.com/in/maihannijat">
+                        <img src="images/linkedin.png" alt="Linkedin" />
+                        <p class="text_white">Linkedin: https://www.linkedin.com/in/maihannijat</p>
+                     </a>
+                     <a href="https://stackoverflow.com/users/894532/maihan-nijat">
+                        <img src="images/stackoverflow.png" alt="GitHub" />
+                        <p class="text_white">Stackoverflow: https://stackoverflow.com/users/894532/maihan-nijat</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="content_row contact_bottom">
+                  <div>
+                     <img src="images/email-outline.png" alt="email" />
+                     <p class="text_white">maihannijat@gmail.com</p>
+                  </div>
+                  <div>
+                     <img src="images/cellphone-iphone.png" alt="phone" />
+                     <p class="text_white">416-854-1324</p>
+                  </div>
+                  <div>
+                     <img src="images/map-marker.png" alt="address" />
+                     <p class="text_white">1545 Ouellette Ave, Windsor ON</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <footer>
+            <p class="text_white">All rights reserved by Maihan Nijat</p>
+         </footer>
+      </article>
+   </body>
+</html>

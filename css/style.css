@@ -1,0 +1,494 @@
+/*
+    Author: Maihan Nijat
+    Date: 2017-11-10
+    Document: CSS Stylesheet
+    Purpose: Portflio
+    Description: Single page web portfolio website with HTML5, CSS and JavaScript
+                 technologies.
+    Version: 1.0
+*/
+
+
+/* Reset all style */
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	list-style-type: none;
+	border: 0;
+	color: black;
+	font-family: arial;
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+}
+
+h2,
+h3 {
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+.text_gray {
+	color: #414141;
+}
+
+.text_white {
+	color: #ebebeb;
+}
+
+.sidebar {
+	flex: 0 0 250px;
+	padding: 20px;
+	background-color: #474747;
+	text-align: center;
+}
+
+.fixed-sidebar {
+	position: fixed;
+	width: 200px;
+}
+
+.sidebar ul {
+	margin-top: 30px;
+}
+
+.sidebar li:hover a,
+.top-menu li:hover a {
+	color: orange;
+}
+
+.sidebar li a,
+.top-menu li a {
+	display: block;
+	padding: 8px 0 8px 0;
+	color: #a3a3a3;
+	border-top: solid 1px gray;
+}
+
+.sidebar li img {
+	display: block;
+	width: 30px;
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+.logo {
+	width: 80px;
+	border-radius: 50%;
+	border: solid thick lightgray;
+}
+
+.name {
+	letter-spacing: 3px;
+	font-size: 1rem;
+	color: whitesmoke;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header {
+	z-index: 100;
+	display: none;
+	position: fixed;
+	width: 100%;
+	background: #363636;
+	opacity: 0.8;
+	padding: 11px;
+}
+
+header .name {
+	margin: auto;
+	width: 80%;
+	text-align: center;
+}
+
+.menu-icon {
+	position: absolute;
+	left: 10px;
+	margin-top: -4px;
+	width: 30px;
+}
+
+.top-menu {
+	display: none;
+	padding: 20px;
+	padding-left: 15px;
+	height: 100vh;
+}
+
+.top-menu li {
+	text-align: left;
+}
+
+article {
+	flex: 0 1 auto;
+	text-align: center;
+	background: #474747;
+	border: solid 1px gray;
+	overflow: hidden;
+}
+
+.parallax {
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#home {
+	background-image: url("../images/bg_1.jpg");
+}
+
+#about {
+	background-image: url("../images/bg_2.jpg");
+}
+
+#work {
+	background-image: url("../images/bg_3.jpg");
+}
+
+#experience {
+	background-image: url("../images/bg_1.jpg");
+}
+
+#skills {
+	background-image: url("../images/bg_2.jpg");
+}
+
+#education {
+	background-image: url("../images/bg_3.jpg");
+}
+
+#contact {
+	background-image: url("../images/bg_1.jpg");
+}
+
+.content_row {
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+}
+
+.content_col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.content_block,
+#experience h2 {
+	text-align: left;
+}
+
+.content_wrap {
+	flex-wrap: wrap;
+}
+
+.black_overlay {
+	background: rgba(71, 71, 71, 0.9);
+	padding: 40px;
+}
+
+.white_overlay {
+	background: rgba(255, 255, 255, 0.7);
+	padding: 40px;
+}
+
+#home span {
+	margin: auto;
+}
+
+#about p {
+	padding-right: 10px;
+	line-height: 2.5;
+}
+
+.work_card {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	min-width: 200px;
+	max-width: 600px;
+	height: auto;
+	margin: 10px 13px 50px 13px;
+	flex-grow: 1;
+}
+
+.work_card figcaption {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.work_card img {
+	width: 100%;
+	height: auto;
+}
+
+.work_card a figure::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.work_card a figure:hover:after {
+	opacity: .8;
+	background-color: orange;
+	background-image: url(../images/external.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#experience img {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.exp_item {
+	padding: 20px 0 20px 0;
+}
+
+#skills .content_row>div {
+	flex-basis: 45%;
+	margin: 0 40px 40px 0;
+}
+
+.progress_title {
+	width: 80px;
+	margin-top: -5px;
+	color: #414141;
+}
+
+.education_cards {
+	text-align: center;
+}
+
+.education_card {
+	border: 1px solid orange;
+	border-radius: 5px;
+	max-width: 280px;
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+	background-color: rgba(90, 90, 90, 0.8);
+}
+
+.education_card * {
+	color: white;
+}
+
+.education_card h3 {
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+.education_card p {
+	font-size: 0.9rem;
+}
+
+#education .btn {
+	margin-top: 40px;
+}
+
+.education_card:hover {
+	background: orange;
+	color: white;
+}
+
+#clients * {
+	color: #414141;
+}
+
+#clients .card {
+	flex-basis: 295px;
+	margin: 0 20px 50px 0;
+	background: rgba(71, 71, 71, 0.5);
+	border: solid 1px gray;
+}
+
+#contact h2 {
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+#contact .content_col a {
+	padding: 40px 0 40px 0;
+}
+
+#contact a img {
+	height: 40px;
+}
+
+.contact_bottom div {
+	padding: 40px 5px 20px 5px;
+	background: rgba(0, 0, 0, 0.4);
+	flex-basis: 100%;
+}
+
+.contact_bottom div p {
+	display: inline-block;
+}
+
+.contact_bottom img {
+	width: 48px;
+}
+
+.btn {
+	width: 170px;
+	height: 50px;
+	padding-top: 10px;
+	background-image: url("../images/menu-down.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+footer {
+	border-top: solid 1px gray;
+}
+
+footer p {
+	margin-top: 20px;
+}
+
+
+/* Media Queries for different screen sizes */
+
+@media screen and (max-width: 1050px) and (min-width: 801px) {
+	.sidebar {
+		flex: 0 0 150px;
+	}
+	.fixed-sidebar {
+		width: 100px;
+	}
+	.logo {
+		display: none;
+	}
+	.sidebar li a {
+		padding-top: 17px;
+		padding-bottom: 17px;
+	}
+	.sidebar li img {
+		display: none;
+	}
+	#home span img,
+	#about img {
+		width: 350px;
+	}
+	#home div {
+		height: 100vh;
+	}
+	.work_card {
+		min-width: 200px;
+	}
+}
+
+@media screen and (max-width: 1049px) {
+	#experience img {
+		display: none;
+	}
+	#skills .content_row>div {
+		flex-basis: 100%;
+	}
+	#contact .content_row {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		flex-direction: column;
+	}
+	.sidebar {
+		display: none;
+	}
+	header {
+		display: block;
+	}
+	article {
+		margin-top: 40px;
+	}
+	.black_overlay,
+	.white_overlay {
+		padding-top: 50px;
+	}
+	#home span img,
+	#about img {
+		width: 310px;
+	}
+	.work_card {
+		width: 45%;
+		min-width: 270px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.work_card {
+		min-width: 180px;
+		width: 40%;
+	}
+	#about span {
+		display: none;
+	}
+	.education_card {
+		max-width: 400px;
+	}
+	.content_row, .content_col, h2, #contact h2, #experience h2, h3, button,
+	.content_block,
+	.black_overlay,
+	.btn {
+		text-align: center;
+		align-self: center;
+	}
+
+	.contact_bottom div p {
+    display: block;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	#home span img,
+	#about img {
+		width: 180px;
+	}
+	#home span {
+		padding-left: 10px;
+	}
+	.work_card {
+		min-width: 320px;
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#home .content_row,
+	#about .content_row {
+		flex-direction: column-reverse;
+	}
+	#home span img,
+	#about img {
+		width: 200px;
+		margin: auto;
+	}
+	#home span {
+		margin: 0;
+	}
+	.work_card {
+		min-width: 200px;
+	}
+	.education_card {
+		max-width: 200px;
+	}
+}
